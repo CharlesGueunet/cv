@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage{color}    % colors for text
+\usepackage{enumitem} % list without margin
+\usepackage[bottom=0.6in,top=0.8in,left=0.8in,right=0.8in]{geometry} % margins
+\pagenumbering{gobble}% no page number
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%---------------------------------------------------------------------------------------
+% FOOTER SECTION
+%---------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+%---------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%---------------------------------------------------------------------------------------
+% HEADER SECTION
+%---------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape 
+Gueunet Charles} % Your name at the top
+
+{\Large\Letter} charles.gueunet@gmail.com \hspace{0.2cm} {\Large\Telefon} +33 6 01 18 92 87 \\
+\textbf{ http://www.gueunetcharles.com/} 
+
+
+\vspace{0.3cm} % Extra whitespace after the large name at the top
+
+%---------------------------------------------------------------------------------------
+%   SUMMARY
+%---------------------------------------------------------------------------------------
+
+\begin{flushleft}
+  I am a 22 years old diligent student involved in his projects. Passionate about computer science \\
+  I am really motivated to bring my skills in innovative projects.
+  %% PLEASE VISIT MY WEBSITE
+\end{flushleft}
+
+%---------------------------------------------------------------------------------------
+%	OBJECTIVE
+%---------------------------------------------------------------------------------------
+
+\section{Objective}
+
+Seeking a four month internship (at least) in computer science with a research component.\\
+Available from \textbf{May 2015}.
+
+%---------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%---------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray Period & \textbf{April 2014 -- August 2014}\\
+  \gray Employer & \textbf{NaturaBuy} \hfill Pau, France\\
+  \gray Job Title & \textbf{Trainee software developer}\\
+  \gray Languages & \textbf{NGinX, MySQL, PHP, Javascript, HTML and Bash}\\
+   Subject & Assist the development team in various realms.\\
+		   & Implement an automatic completion with machine learning abilities.\\
+   Gains   & This internship gave me a better idea of \textbf{code reliability} in the professional world
+   and allowed me to work on \textbf{several projects} simultaneously. 
+\end{tabularx}
+
+%---------------------------------------------------------------------------------------
+%	EDUCATION
+%---------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray Period & \textbf{September 2010 --- Present}\\
+  \gray Degree & \textbf{Engineering diploma in Computer Science}\\
+  \gray School & \textbf{EISTI} \hfill Pau, France\\
+  & International School of the Sciences of Data processing, formation about\\
+  & Cloud computing, Software development, Algorthmics and Management.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \gray Period & \textbf{September 2014 --- Present}\\
+  \gray Degree & \textbf{Master of Science in Computer Science}\\
+  \gray School & \textbf{Pau University} \hfill Pau, France\\
+  & Diploma with a double major in accordance with EISTI about\\ 
+  & Three-tier applications, Data processing and Multi-agent systems.\\
+  & It is a \textbf{research} oriented schooling.
+\end{tabularx}
+
+%---------------------------------------------------------------------------------------
+%	SKILLS
+%---------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+  ~Computer Languages & C, C++, Java, Ruby, Scheme, Bash \\
+  ~Protocols & TCP/IP, HTTP, SOAP, JSON, XML\\
+  ~Databases & SQL, MySQL, MongoDB, NoSQL \\
+  ~Web       & REST, Java EE, PHP, Javascript, HTML, CSS \\
+  ~Tools     & SVN, Git, Vim,  \LaTeX, Agile, TDD\\
+  ~Languages & French (native), English (865 at TOEIC) 
+\end{tabular}
+
+%---------------------------------------------------------------------------------------
+
+
+%---------------------------------------------------------------------------------------
+%	INTERESTS
+%---------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
+ \setlength{\itemsep}{1pt}
+ \item Open source projects
+ \item Piano (12years) and Music
+ \item Sport (swimming, golf and tennis)
+\end{itemize}
+
+%---------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}

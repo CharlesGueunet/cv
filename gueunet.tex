@@ -9,8 +9,9 @@
 
 \usepackage{marvosym} % telefon and mail symbols
 
-\usepackage{color}
-\newcommand{\gray}{\rowcolor[gray]{.95}}
+\usepackage[table]{xcolor}
+\definecolor{customRowBG}{rgb}{0, 139, 163}
+\newcommand{\rowBG}{\rowcolor{customRowBG!15}}
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 
@@ -19,84 +20,83 @@
 
 {\fontsize{36}{36}\selectfont\scshape Gueunet Charles} % Your name at the top
 
-{\Large\Letter} Charles.Gueunet@lip6.fr \hspace{0.2cm} {\Large\Telefon} +33 6 01 18 92 87 \\
-\textbf{http://charles.gueu.net/cv/}
+{\Large\Letter} charles.gueunet@kitware.com \hspace{0.2cm} {\Large\Telefon} +33 6 01 18 92 87
+% \textbf{http://charles.gueu.net/cv/}
 
 
-\vspace{0.2cm} % Extra whitespace after the large name at the top
+\vspace{0.4cm}
 
 \begin{flushleft}
-  I am a 26 years old Ph.D student working in Scientific Visualization and High
-  Performance Data Analysis. Currently at Kitware Lyon, this thesis takes place
-  in Sorbonne Université.
+  I am a 27 years old R\&D engineer working in the Scientific Visualization
+  team at Kitware Lyon. I defended my Ph.D in Level-set based Topological Data
+  Analysis in 2019.
 \end{flushleft}
 
-\section{Objective}
-
-My goal in short term is to move from discovery to innovation.
-
-\section{Work Experience}
-
-\begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2.1cm}X}
-  \gray{Position}    & \textbf{Ph.D Student}, at \textbf{LIP6} and \textbf{Kitware}\hfill{Ferburary 2016 --- Present}\\
-  \gray{Languages}   & \textbf{C++, OpenMP, CMake, VTK, TTK, Paraview}\\
-  \gray{Supervisors} & \textbf{Julien Tierny} (julien.tierny@lip6.fr), \textbf{Julien Jomier} (julien.jomier@kitware.com)\\
-  \gray{}            &  and \textbf{Pierre Fortin} (pierre.fortin@lip6.fr)\\
-  Subject            & High Performance Level-set based Topological Data Analysis\\
-  Gains              & High Performance Data Analysis Algorithms, Article Redaction
-\end{tabularx}
-
-\vspace{0.3cm}
-\rule{8cm}{0.6pt}
 \vspace{0.3cm}
 
+% \section{Objective}
+
+% My goal in short term is to move from discovery to innovation.
+
+\section{Position}
+
 \begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2.1cm}X}
-  \gray{Position}    & \textbf{Trainee researcher}, at \textbf{LIP6}\hfill{May 2015 --- February 2016}\\
-  \gray{Languages}   & \textbf{C++, OpenMP, VTK, CMake}\\
-  \gray{Supervisors} & \textbf{Julien Tierny} (julien.tierny@lip6.fr) and \textbf{Pierre Fortin} (pierre.fortin@lip6.fr)\\
-   Subject           & Research in \textbf{scientific visualisation}, knowledge about contour tree algorithms.\\
-    Gains            & Basis of Topological Data Analysis.
+  \rowBG{Position}  & \textbf{R\&D Engineer}, at \textbf{Kitware}\hfill{Ferburary 2019 --- Present}\\
+  \rowBG{Languages} & \textbf{C++, CMake, VTK, Paraview, TTK, OpenMP, Python}\\
+  Gains             & Improve code quality, Quickly apprehend a large code base, Reduce technical debt
 \end{tabularx}
 
 \section{Publications}
 
 \begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2.1cm}X}
-  \gray{Main-}       & \textbf{TPDS 2018}: Task-based Augmented Contour Trees with Fibonacci Heaps\\
-  \gray{Author}      & \textbf{LDAV 2017}: Task-based Augmented Merge Trees with Fibonacci Heaps\\
-  \gray{}            & \textbf{LDAV 2016}: Contour Forests: Fast Multi-threaded Augmented Contour Trees.\\
-                     & \textbf{IEEE Vis 2018}: Topological Data Analysis Made Easy with the Topology Toolkit.\\
-                     & \textbf{Conference on Physical Modeling for Virtual Manufacturing Systems and Processes 2017}: Viscous fingering: A topological visual analytic approach.\\
-                     & \textbf{IEEE Vis 2017}: The Topology Toolkit [Best Paper Honorable Mention Award].\\
-                     & \textbf{IEEE Vis 2016}: Visualizing ensemble of Viscous Fingers [Honorable Mention Award].
+  \rowBG{Main-}  & \textbf{Thesis}: High Performance Level-set Based Topological Data Analysis\\
+  \rowBG{Author} & \textbf{Eurovis 2019}: Task-based Augmented Reeb Graphs with Dynamic ST-Trees\\
+  \rowBG{}       & \textbf{TPDS 2018}: Task-based Augmented Contour Trees with Fibonacci Heaps\\
+  \rowBG{}       & \textbf{LDAV 2017}: Task-based Augmented Merge Trees with Fibonacci Heaps\\
+  \rowBG{}       & \textbf{LDAV 2016}: Contour Forests: Fast Multi-threaded Augmented Contour Trees\\
+                 & \textbf{IEEE Vis 2018}: Topological Data Analysis Made Easy with the Topology Toolkit\\
+                 & \textbf{Conference on Physical Modeling for Virtual Manufacturing Systems and Processes 2017}: Viscous fingering: A topological visual analytic approach\\
+                 & \textbf{IEEE Vis 2017}: The Topology Toolkit [Best Paper Honorable Mention Award]\\
+                 & \textbf{IEEE Vis 2016}: Visualizing ensemble of Viscous Fingers [Honorable Mention Award]
 \end{tabularx}
-
 
 \section{Education}
 
 \begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-  \gray{Period} & \textbf{2010 --- 2015}\\
-  \gray{Degree} & \textbf{Engineering diploma in Computer Science (Master degree, 5yrs)}\\
-  \gray{School} & \textbf{EISTI} \hfill Pau, France\\
-  & International School of the Sciences of Data Processing, formation in\\
-  & Cloud computing, Software development, Algorithmic and Management.
+  \rowBG{Period} & \textbf{2016 --- 2019}\\
+  \rowBG{Degree} & \textbf{Ph.D}\\
+  \rowBG{Place } & \textbf{Sorbonne University (LIP6) and Kitware} \hfill Paris, France\\
+  Subject        & High Performance Level-set based Topological Data Analysis\\
+  Gains          & HPC, TDA, Article redaction and review process
+\end{tabularx}
+
+\vspace{0.4cm}
+\rule{8cm}{0.6pt}
+\vspace{0.4cm}
+
+\begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+  \rowBG{Period} & \textbf{2010 --- 2015}\\
+  \rowBG{Degree} & \textbf{Engineering Diploma in Computer Science (Master degree, 5yrs)}\\
+  \rowBG{Place}  & \textbf{EISTI} \hfill Pau, France\\
+                 & International School of the Sciences of Data Processing, formation in\\
+                 & Cloud Computing, Software development, Algorithmic And management
 \end{tabularx}
 
 \section{Skills}
 
-\begin{tabular}{@{}>{\bfseries}l@{\hspace{4ex}}l}%
-   Computer Languages & C, C++, VTK, TTK, OpenMP, MPI, CMake, Python \\
-   Tools              & GNU/Linux, Git, Paraview, Vim, \LaTeX\\
-   Languages          & French (native), English (865 at TOEIC)
-\end{tabular}
-
+\begin{tabularx}{1\linewidth}{>{\raggedleft}p{2cm}X}
+   Code:      & C, C++, VTK, TTK, OpenMP, MPI, CMake, Python \\
+   Tools:     & GNU/Linux, Git, Paraview, Vim, \LaTeX\\
+   Languages: & French (native), English (865 at TOEIC)
+\end{tabularx}
 
 \section{Interests}
 
-\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt]
- \setlength{\itemsep}{1pt}
- \item IT: Open-source, Videos games
- \item Music: Piano (12years)
-\end{itemize}
+\begin{tabularx}{1\linewidth}{>{\raggedleft}p{2cm}X}
+  IT:\@    &  Open-source, Videos games \\
+  Music:   &  Piano (12years) \\
+  Hobbies: &  Board and Video games
+\end{tabularx}
 
 \end{center}
 \end{document}

@@ -7,7 +7,8 @@
 \usepackage[bottom=0.5in,top=0.5in,left=0.7in,right=0.7in]{geometry}
 \pagenumbering{gobble}
 
-\usepackage{marvosym} % telefon and mail symbols
+\usepackage{marvosym} % phone and mail symbols
+\usepackage{hyperref}
 
 \usepackage[table]{xcolor}
 \definecolor{customRowBG}{rgb}{0, 139, 163}
@@ -21,29 +22,26 @@
 {\fontsize{36}{36}\selectfont\scshape Gueunet Charles} % Your name at the top
 
 {\Large\Letter} charles.gueunet@kitware.com \hspace{0.2cm} {\Large\Telefon} +33 6 01 18 92 87
-% \textbf{http://charles.gueu.net/cv/}
-
 
 \vspace{0.4cm}
 
 \begin{flushleft}
   I am a 27 years old R\&D engineer working in the Scientific Visualization
-  team at Kitware Lyon. I defended my Ph.D in Level-set based Topological Data
-  Analysis in 2019.
+  team at Kitware.\\
+  I defended my Ph.D on High Performance Topological Data Analysis in 2019,
+  since then I work on maintaining \href{https://vtk.org/}{VTK},
+  \href{https://www.paraview.org/}{ParaView} and
+  \href{https://topology-tool-kit.github.io/}{TTK}\@.
 \end{flushleft}
 
-\vspace{0.3cm}
-
-% \section{Objective}
-
-% My goal in short term is to move from discovery to innovation.
+\vspace{0.1cm}
 
 \section{Position}
 
 \begin{tabularx}{1\linewidth}{>{\raggedleft\scshape}p{2.1cm}X}
   \rowBG{Position}  & \textbf{R\&D Engineer}, at \textbf{Kitware}\hfill{Ferburary 2019 --- Present}\\
   \rowBG{Languages} & \textbf{C++, CMake, VTK, Paraview, TTK, OpenMP, Python}\\
-  Gains             & Improve code quality, Quickly apprehend a large code base, Reduce technical debt
+  Gains             & Improve code review \& writing skills, quickly apprehend a large code base
 \end{tabularx}
 
 \section{Publications}
